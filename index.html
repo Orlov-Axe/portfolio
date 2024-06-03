@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Portfolio</title>
+
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/function.js" defer></script>
+  <script src="js/main.js" defer></script>
+</head>
+
+<body>
+  <div class="wrapper">
+    <!-- Шапка: логотип, телефон компании и кнопку для заказа звонка -->
+    <header class="header">
+
+      <!-- Логотип -->
+      <div class="header__logo">
+        Portfolio
+      </div>
+      <!-- Меню -->
+      <nav class="header__menu">
+        <!-- Список элементов меню -->
+        <ul class="header__list">
+          <!-- Элемент меню -->
+
+
+
+          <li>
+            <a href="#catalog" class="header__link">
+              Портфолио
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Основное содержимое -->
+    <main class="main">
+
+      <!-- Блок рекламы: название, краткое описание, кнопка в каталог -->
+      <section class="main__marketing marketing">
+        <div class="marketing__container">
+          <!-- Название компании -->
+          <h1 class="marketing__name">
+            Сайт портфолио веб-разработчика
+          </h1>
+          <!-- Кнопка для перехода в каталог -->
+
+          <a href="#catalog" class="marketing__button">
+            Орлов Павел
+          </a>
+
+          <!-- Описание компании -->
+          <p class="marketing__text">
+            Веб-разработчик / HTML-верстальщик<br>
+            программист JavaScript
+          </p>
+
+        </div>
+      </section>
+
+
+
+      <!-- Блок О компании -->
+      <section class="main__company company" id="company">
+        <!-- Заголовок блока -->
+        <h2 class="company__title">
+          Обо мне
+        </h2>
+        <div class="company__text">
+          <p>
+            Среднее профессиональное Образование, видеокурсы, форумы, статьи.
+          </p>
+        </div>
+      </section>
+
+      <section class="main__profession">
+        <h2 class="profession__title">
+          Профессиональные навыки
+        </h2>
+        <div class="profession__professions">
+          HTML
+          <div class="profession__progress-bar">
+            <div class="profession__progress" style="width: 95%;"></div>
+          </div>
+
+          CSS
+          <div class="profession__progress-bar">
+            <div class="profession__progress" style="width: 75%;"></div>
+          </div>
+
+          JavaScript
+          <div class="profession__progress-bar">
+            <div class="profession__progress" style="width: 50%;"></div>
+          </div>
+
+          Photoshop
+          <div class="profession__progress-bar">
+            <div class="profession__progress" style="width: 60%;"></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="main__skills">
+        <h2 class="skills__title">
+          Коммуникативные навыки
+        </h2>
+        <div class="skills__skillss">
+          Умение работать в команде
+          <div class="skills__progress-bar">
+            <div class="skills__progress" style="width: 85%;"></div>
+          </div>
+
+          Креативность
+          <div class="skills__progress-bar">
+            <div class="skills__progress" style="width: 95%;"></div>
+          </div>
+
+          Вести переговоры
+          <div class="skills__progress-bar">
+            <div class="skills__progress" style="width: 60%;"></div>
+          </div>
+
+          Умение быстро читать
+          <div class="skills__progress-bar">
+            <div class="skills__progress" style="width: 100%;"></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="main__catalog catalog" id="catalog">
+        <!-- Заголовок блока -->
+        <h2 class="catalog__title">
+          Портфолио
+        </h2>
+
+        <!-- Фильтр -->
+        <nav class="catalog__menu">
+
+          <ul class="catalog__list">
+            <li class="catalog__link catalog__link_active" data-filter="all">
+              Все
+            </li>
+            <li class="catalog__link" data-filter="gyroscuters">
+              Под ключ
+            </li>
+            <li class="catalog__link" data-filter="electric-scooters">
+              Верстка
+            </li>
+            <li class="catalog__link" data-filter="segways">
+              Прочее
+            </li>
+          </ul>
+
+        </nav>
+
+        <!-- Каталог товаров -->
+        <div class="catalog__items ">
+
+          <!-- Товар -->
+          <div class="catalog__item gyroscuters">
+            <div class="catalog__type">
+              Сайт гироскутеров
+            </div>
+            <div class="catalog__image">
+              <img src="image/mygiro.png" alt="Гироскутер Smart Balance 10 Красный">
+            </div>
+
+          </div>
+
+          <!-- Товар -->
+          <div class="catalog__item gyroscuters">
+            <div class="catalog__type">
+              Фан-сайт по наруто
+            </div>
+            <div class="catalog__image">
+              <img src="image/naruto.png" alt="Гироскутер Smart Balance Premium 10 Цветные Молнии">
+            </div>
+          </div>
+
+          <!-- Товар -->
+          <div class="catalog__item gyroscuters">
+            <div class="catalog__type">
+              Игра найди лишнее
+            </div>
+            <div class="catalog__image">
+              <img src="image/game.png" alt="Гироскутер Smart Balance SUV Черная Молния 10.5&quot; Premium PRO">
+            </div>
+          </div>
+
+          <!-- Товар -->
+          <div class="catalog__item segways">
+            <div class="catalog__type">
+              Landingpage
+            </div>
+            <div class="catalog__image">
+              <img src="image/landingpage.png" alt="Сигвей Xiaomi Ninebot mini Pro Black (Черный) ">
+            </div>
+          </div>
+        </div>
+
+      </section>
+    </main>
+
+    <!-- Подвал сайта -->
+    <footer class="footer">
+
+      <div class="footer__info">
+        <p class="footer__text">
+          Вы можете связаться со мной одним из представленных способов.
+        </p>
+      </div>
+
+
+      <div class="footer__items">
+
+        <div class="footer__item">
+          <img src="image/email.png" alt="">
+          orlovp72@gmail.com
+        </div>
+
+        <div class="footer__item">
+          <img src="image/github.png" alt="">
+          Orlov-Axe
+        </div>
+
+
+
+      </div>
+
+      <div class="footer__copyright">
+        &copy; 2024 Орлов Павел
+      </div>
+      <a href="#top" id="top" class="top" title="Наверх">
+        &#9650;
+      </a>
+    </footer>
+  </div>
+
+  <!-- Кнопка наверх -->
+
+</body>
+
+</html>
